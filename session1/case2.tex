@@ -1,0 +1,122 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Article
+% LaTeX Template
+% Version 2.0 (28/2/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Frits Wenneker
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt, a4paper]{ctexart} % 10pt font size (11 and 12 also possible), A4 paper (letterpaper for US letter) and two column layout (remove for one column)
+
+\input{structure.tex} % Specifies the document structure and loads requires packages
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{激励很重要} % The article title
+
+\author{
+	\authorstyle{鲁晓东\textsuperscript{1}} % Authors
+	\newline\newline % Space before institutions
+	\textsuperscript{1}\institution{中山大学岭南学院经济学系}\\ % Institution 1
+	%\textsuperscript{2}\institution{阅读材料2}\\ % Institution 2
+	%\textsuperscript{3}\institution{\texttt{LaTeXTemplates.com}} % Institution 3
+}
+
+% Example of a one line author/institution relationship
+%\author{\newauthor{John Marston} \newinstitution{Universidad Nacional Autónoma de México, Mexico City, Mexico}}
+
+\date{\today} % Add a date here if you would like one to appear underneath the title block, use \today for the current date, leave empty for no date
+%------------加水印-------------------------------------------
+\usepackage{draftwatermark}         % 所有页加水印
+%\usepackage[firstpage]{draftwatermark} % 只有第一页加水印
+%\SetWatermarkText{Xiaodong Lu}           % 设置水印内容
+\SetWatermarkText{\includegraphics{fig//lingnan.png}}         % 设置水印logo
+\SetWatermarkLightness{0.9}             % 设置水印透明度 0-1
+\SetWatermarkScale{0.5}                   % 设置水印大小 0-1    
+%--------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+\thispagestyle{firstpage} % Apply the page style for the first page (no headers and footers)
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+	
+	\lettrineabstract{经济战胜了情感和仁爱。}
+	
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+
+
+\section*{}
+
+
+
+在过去,囚犯们会因为坏血病、伤寒发热和感染天花而死于非命,但没有什么比糟糕的激励更能令他们丧命。
+
+
+1787年,英国政府曾经雇用一些船长把一些被判了重刑的罪犯航运到澳大利亚。航运船只上的条件简直恶劣得令人恐怖,有人甚至说这些船上的条件比贩卖奴隶的船还要糟糕。
+
+
+有一次在航运过程中,超过三分之一的男人都死了,其余的人到达时也都是精疲力竭,饥饿难忍,疾病缠身。一名大副在评论这些罪犯时残酷地说:“就让这些死鬼下地狱吧,反正运送他们的酬金老板们已经得到了。
+
+
+英国公众对这些罪犯绝无好感,但他们也罪不至死。于是,新闻报纸发表社论要求改善航运条件,宗教人士呼吁船长们应该有人道主义精神,立法委员们通过了立法,要求改善航运过程中的食物、饮水、光线和空气,以及提供必要的医疗救助。
+
+然而,即使这样,死亡率仍然一直高得惊人。
+
+直到有位经济学家给出新的建议之前,任何措施都没有见效过。
+
+%---------------------------------问题
+\section*{问题}
+\begin{enumerate}
+	\item 你能想象得出这位经济学家给出的是什么建议吗？
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\printbibliography[title={Bibliography}] % Print the bibliography, section title in curly brackets
+
+%----------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 参考文献
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\small
+%99为最大引用条数
+\begin{thebibliography}{99}
+	\setlength{\parskip}{0pt} %段落之间的竖直距离
+	\bibitem{ref1}Christopher, Emma. 2007. "The slave trade is merciful compared to [this]. In Christopher, E., C. Pybus, and M. Rediker(eds), Many Middle Passages, cahp.6".
+%	\bibitem{ref2} 玄奘. 大唐西域记学报~[J], 唐~6XX~年, 1(2): 23-55.
+	\end {thebibliography}
+
+\end{document}

@@ -1,0 +1,121 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Article
+% LaTeX Template
+% Version 2.0 (28/2/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Frits Wenneker
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt, a4paper]{ctexart} % 10pt font size (11 and 12 also possible), A4 paper (letterpaper for US letter) and two column layout (remove for one column)
+
+\input{structure.tex} % Specifies the document structure and loads requires packages
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{你值得把时间用在这里吗?} % The article title
+
+\author{
+	\authorstyle{鲁晓东\textsuperscript{1}} % Authors
+	\newline\newline % Space before institutions
+	\textsuperscript{1}\institution{中山大学岭南学院经济学系}\\ % Institution 1
+	%\textsuperscript{2}\institution{University of Texas at Austin, Texas, United States of America}\\ % Institution 2
+	%\textsuperscript{3}\institution{\texttt{LaTeXTemplates.com}} % Institution 3
+}
+
+% Example of a one line author/institution relationship
+%\author{\newauthor{John Marston} \newinstitution{Universidad Nacional Autónoma de México, Mexico City, Mexico}}
+
+\date{\today} % Add a date here if you would like one to appear underneath the title block, use \today for the current date, leave empty for no date
+%------------加水印-------------------------------------------
+\usepackage{draftwatermark}         % 所有页加水印
+%\usepackage[firstpage]{draftwatermark} % 只有第一页加水印
+%\SetWatermarkText{Xiaodong Lu}           % 设置水印内容
+\SetWatermarkText{\includegraphics{fig//lingnan.png}}         % 设置水印logo
+\SetWatermarkLightness{0.01}             % 设置水印透明度 0-1
+\SetWatermarkScale{0.5}                   % 设置水印大小 0-1    
+%--------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+\thispagestyle{firstpage} % Apply the page style for the first page (no headers and footers)
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+	
+	\lettrineabstract{你们当中正在把微观经济学当作大学教育一部分来学习的人可能为此付出了许多。问一问这种花费是否值得是合情理的。当然,大学带来的许多利益(如对文化更好的鉴赏力、友情等)并没有货币价值。在这个应用中,我们试问以美元计算的成本花费是否值得。。}
+	
+
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+
+
+\section*{正确衡量成本}
+典型的美国大学学生每年支付的学费、杂费、住宿费和伙食费约20000美元。所以有人会认为四年大学的“成本”是80000美元。但至少从三个原因来看这是不正确的,所有这些原因都来自于对机会成本概念的简单应用：
+   \begin{itemize}
+   	\item 住宿费和伙食费夸大了大学的真实成本,因为无论你是否上大学,这些成本都会发生。
+   	\item 只包括现金而遗漏了最重要的上大学的机会成本——参加工作可能获得的收入。
+   	\item 大学费用是随着时间支付的,因此一个人不能把4年费用简单加总而得出全部费用。
+   \end{itemize}
+
+上大学的成本可以随着以下因素进行调整。首先,住宿费和伙食费每年花费约7000美金,因此学杂费达13000美元。为了决定失去的工资这项机会成本我们必须做出一些假设,其中之一是如果你不上学,每年可以挣到20000美元而打零工只能挣到2000美元。因此,与损失的工资相联系的机会成本约为每年1800美元,将年度总成本提高到了3100美元。我们不能简单用4×31000美元计算,必须考虑到其中的一些支付将在未来进行。总之,这一调整将使总成本约为114000美元。
+
+\section*{因上大学获得的收入}
+最近的许多研究表明大学毕业生比没有受过高等教育的人能挣更多的钱。一个典型的发现是,上大学的人比除此之外其他条件相同的群体的年收入高出约50\%。再一次,我们假设没有受过高等教育的人每年收入为20000美元,这表明高等教育带来的收入每年能多10000美元。看看这项投资,上大学带来了每年9\%的回报(即10/114≈0.09)。这是一个比较有吸引力的回报,超过了长期债券(约为2\%)以及股票(约为7\%)。因此,看起来你的确值得将时间花在上大学上。
+
+\section*{美好的日子会继续下去吗?}
+这些计算并非让人特别惊讶大多数人知道上大学能受益。事实上,美国人上大学的规模迅速扩张,这可能是对这种乐观统计数据的反应。令人吃惊的是,受大学教育人群的大规模增长看起来并没有降低这种投资的吸引力。定是因为某些原因,使得对受过高等教育的工人的需求与其供给保持一致。这些可能的原因成为许多研究的主题。一个可能的解释是某些工作随着时间会变得更加复杂。这个过程因为计算机技术的采用而加速。另一个解释是美国的贸易模式可能使受过高等教育的工人受益,因为他们受雇于不对称的出口行业。无论是什么解释,对这类工人需求增加的一个影响是美国和其他国家收入不平等趋势加大。
+
+
+
+
+%---------------------------------问题
+\section*{问题}
+\begin{enumerate}
+	\item 当计算上大学的机会成本时,你应该如何考虑如果你离开学校却找不到工作的可能性?
+	\item 所估计的因上大学而获得的收入是基于平均水平的。你自己的特性将如何影响该收人的规模?
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\printbibliography[title={Bibliography}] % Print the bibliography, section title in curly brackets
+
+%----------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 参考文献
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\small
+%99为最大引用条数
+\begin{thebibliography}{99}
+	\setlength{\parskip}{0pt} %段落之间的竖直距离
+	\bibitem{ref1} Nicholson, W. and Snyder, C. (2010). Intermediate Microeconomics and Its Application (11 ed.)： Cengage Learning. Chap.1
+%	\bibitem{ref2} 玄奘. 大唐西域记学报~[J], 唐~6XX~年, 1(2): 23-55.
+	\end {thebibliography}
+
+\end{document}

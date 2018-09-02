@@ -1,0 +1,110 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Article
+% LaTeX Template
+% Version 2.0 (28/2/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Frits Wenneker
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt, a4paper]{ctexart} % 10pt font size (11 and 12 also possible), A4 paper (letterpaper for US letter) and two column layout (remove for one column)
+
+\input{structure.tex} % Specifies the document structure and loads requires packages
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{练习:看演唱会的机会成本}%The article title
+
+\author{
+	\authorstyle{鲁晓东\textsuperscript{1}} % Authors
+	\newline\newline % Space before institutions
+	\textsuperscript{1}\institution{中山大学岭南学院经济学系}\\ % Institution 1
+	%\textsuperscript{2}\institution{University of Texas at Austin, Texas, United States of America}\\ % Institution 2
+	%\textsuperscript{3}\institution{\texttt{LaTeXTemplates.com}} % Institution 3
+}
+
+% Example of a one line author/institution relationship
+%\author{\newauthor{John Marston} \newinstitution{Universidad Nacional Autónoma de México, Mexico City, Mexico}}
+
+\date{\today} % Add a date here if you would like one to appear underneath the title block, use \today for the current date, leave empty for no date
+%------------加水印-------------------------------------------
+\usepackage{draftwatermark}         % 所有页加水印
+%\usepackage[firstpage]{draftwatermark} % 只有第一页加水印
+%\SetWatermarkText{Xiaodong Lu}           % 设置水印内容
+\SetWatermarkText{\includegraphics{fig//lingnan.png}}         % 设置水印logo
+\SetWatermarkLightness{0.9}             % 设置水印透明度 0-1
+\SetWatermarkScale{0.5}                   % 设置水印大小 0-1    
+%--------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+\thispagestyle{firstpage} % Apply the page style for the first page (no headers and footers)
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+	
+	\lettrineabstract{这是一个“看似简单，其实也不难”的题目，但是，很多人却在“阴沟里翻了船”，甚至包含许多以此为生的职业经济学家。这是一道什么样的题目呢？我们一起来看一下。}
+	
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+
+
+\section*{问题}
+
+
+
+假设你赢了一张美国大歌星埃里克·克莱普顿（Eric Clapton）今晚演唱会的免费门票。注意，你不能转售。可另一美国大歌星鲍勃·迪伦（Bob Dylan）今晚也在开演唱会，你也很想去。迪伦的演唱会票价为40美元。当然，你别的时候去看他的演出也行，但你的心理承受价格是50美元。换言之，要是迪伦的票价高过50美元，你就情愿不看了，哪怕你没别的事要做。除此之外，看两人的演出并无其他成本。
+
+试问，你去看克莱普顿演唱会的机会成本是多少？ 
+
+\begin{enumerate}[A.]
+	\item 0美元
+	\item 10美元
+	\item 40美元
+	\item 50美元
+\end{enumerate}
+
+
+\section*{花絮}
+这个问题最早由美国经济学家费雷罗和泰勒设计。最初，他们向270名最近上了经济学课程的大学生提出了这个问题，只有7.4\%的人选择了正确答案。因为只有4个选项，哪怕学生们是随机选择，正确率也该有25\%。看起来，同学们似乎觉得掌握这些知识很丢脸。
+
+之后，费雷罗和泰勒又向88名从没上过经济学课程的学生提出了同一个问题，这回的正确率是17.2\%--比上过经济学课程的学生高两倍，但仍比随机选择的正确率要低。 
+
+为什么上过经济学课程的学生没能表现更佳呢？窃以为，主要原因是，在典型的概论课上，教授会给学生灌输几百个概念，机会成本只是其中之一，而且模模糊糊，一笔带过。倘若学生没花足够的时间在上面，没在不同的例子里反复演练，也就无法真正理解它。 
+
+但费雷罗和泰勒提出了另一种可能性：教经济学的讲师自己也没掌握机会成本的基本概念。2005年美国经济学协会\footnote{最顶级的经济学家集会，相当于经济学界的华山论剑，许多受邀经济学家一生以此为荣。}开年会的时候，他俩向199名专业经济学家提出了同一个问题，只有21.6\%的人选择了正确答案，25.1\%的人认为去看克莱普顿演唱会的机会成本是0，25.6\%认为是40美元，还有 27.6\%认为是50美元。 
+
+费雷罗和泰勒核查了经济学概论最主要的教科书，他们发现，大多数教科书对机会成本并未给予足够的重视，来帮助学生解答克莱普顿/迪伦问题。他们还注意到，比概论程度更深的教科书也未曾耐心、深入地介绍这个概念。在大学微观经济学的首选课本当中，索引里都找不到"机会成本"这个词。 
+
+机会成本的概念在经济学发挥了“基石”的作用，它直接来源于经济学的“资源稀缺”的benchmark假设，无数的经济学原理就是建立在“机会成本”之上的，这其中就包括“比较优势”的概念。因此，如果不能正确理解“机会成本”的概念，那么亚当斯密的劳动分工的思想将不在成立，而基于分工的全球贸易体系也将不复存在。另外，比较优势的概念对于个人的来说也意义非凡。给每一个人以存在的确定性理由，无论这个人是聪明还是愚蠢，富裕还是贫穷，博学还是无知。可以说，正确的理解机会成本之后，整个周遭的世界以及人生会瞬间明亮起来。这是你的老师真实的感受，不信你试试。
+
+
+
+
+\end{document}

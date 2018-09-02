@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Article
+% LaTeX Template
+% Version 2.0 (28/2/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Frits Wenneker
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt, a4paper]{ctexart} % 10pt font size (11 and 12 also possible), A4 paper (letterpaper for US letter) and two column layout (remove for one column)
+
+\input{structure.tex} % Specifies the document structure and loads requires packages
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{集中营里的的经济学} % The article title
+
+\author{
+	\authorstyle{鲁晓东\textsuperscript{1}} % Authors
+	\newline\newline % Space before institutions
+	\textsuperscript{1}\institution{中山大学岭南学院经济学系}\\ % Institution 1
+	%\textsuperscript{2}\institution{University of Texas at Austin, Texas, United States of America}\\ % Institution 2
+	%\textsuperscript{3}\institution{\texttt{LaTeXTemplates.com}} % Institution 3
+}
+
+% Example of a one line author/institution relationship
+%\author{\newauthor{John Marston} \newinstitution{Universidad Nacional Autónoma de México, Mexico City, Mexico}}
+
+\date{\today} % Add a date here if you would like one to appear underneath the title block, use \today for the current date, leave empty for no date
+%------------加水印-------------------------------------------
+\usepackage{draftwatermark}         % 所有页加水印
+%\usepackage[firstpage]{draftwatermark} % 只有第一页加水印
+%\SetWatermarkText{Xiaodong Lu}           % 设置水印内容
+\SetWatermarkText{\includegraphics{fig//lingnan.png}}         % 设置水印logo
+\SetWatermarkLightness{0.9}             % 设置水印透明度 0-1
+\SetWatermarkScale{0.5}                   % 设置水印大小 0-1    
+%--------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+\thispagestyle{firstpage} % Apply the page style for the first page (no headers and footers)
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+	
+	\lettrineabstract{每个人都想比上一秒活的更好，当所有人的这一诉求汇聚在一起的时候，它便成为经济体系运作的源动力。经济体系来源于人们改善自身福利的动力。这个动力最为澎湃的场所叫做市场。这门课程讨论的第一个话题就从“市场的产生开始”。}
+	
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+
+
+\section*{}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=1]{fig//powcamp.jpg} % Figure image
+	\caption{R. A. Radford在集中营前} % Figure caption
+	\label{powcamp} % Label for referencing with \ref{bear}
+\end{figure}
+
+照片上的这个人叫R.A.Radford\ref{powcamp},他曾经是一个士兵，在第二次世界大战中被抓成为战俘，他生动的描写了在最不可能出现市场的地方，即战俘营中形成了产品和服务相交换的\textbf{原始市场}，由于这些战俘没有机会生产自己想要的东西，于是他们转为相互交换香烟、化妆品、巧克力以及红十字会定期发给他们的其他有限配给。
+\par
+红十字会平均分配这些供给，但是“被俘没多久...(这些战俘)开始觉得有些东西不够，而有些东西又没用，由于配件的数量和质量有限，他们开始作为礼物送出，或者接受香烟或食品，这种友好的行为一开始尚能改善每个人的状况，但是随着战俘营规模的扩大，仅仅通过馈赠已经无法满足战俘们的多样化需求。
+\par
+几周过后,交易壮大起来,而且产品的价格稳定。一个士兵想高价卖出他的香皂,但是发现他必须与其他卖香皂的人进行竞争。不久后商店出现了,中间商开始利用不同牢房的差价赚取利润。例如,有一个战俘是牧师,他与少数几个战俘被允许自由出入牢房。他发现在第一个牢房中他能以一包香烟换一磅乳酪,在第二个牢房中用一磅乳酪可以换一包半香烟,于是在回去的时候他比刚开始得到了更多的香烟。虽然他的行为有点利已主义(不是出于宗教信仰),但是他为第二个牢房中的人们提供了想要的东西一一比他们本来能得到的更多的乳酪。
+
+事实上,乳酪和香烟价格不同,部分是由于身处不同牢房的战俘们的需求不同,还有一部分原因是他们不能自由交流。为了获取差价,牧师把战俘营中的乳酪店铺由第一个牢房搬到了第二个牢房,因为第二个牢房的奶酪更值钱。而每个人都从牧师的生意中得到了实惠。
+
+战俘营中有些“企业家”( entrepreneurs)囤积香烟,他们在发放军营配给后不久便用香烟将其全部买断,然后在下一次发放配给之前以高价售卖。虽然这些商人同那个牧师一样在追求自己的私人利益,但他们确实在向战俘们提供服务。当人们不想要这些配给时,商人们买进,而当人们的配给短缺时,商人们卖出。这种低价买进、高价卖出的差异给了商人所需动力来进行交易、持有这些配给品,当然也承担价格可能不上涨的风险。
+
+不久后,军营里开始把香烟当作货币,按香烟包数或根数来标价。(只有不受欢迎牌子的香烟可作这个用途,好点牌子的香烟都被人吸掉了。)因为香烟被大众所接受,所以想要香皂的士兵不必再到处寻找那些同时想要他的果酱的人,他用香烟去买就可以了。即使是不抽烟的人也开始接受用香烟做交易了。
+
+这一暂代的货币系统可以自行调节来适应货币供给的变化。当某天红十字会分发了新的香烟供给,价格就会上涨,反映出新货币增加的影响。而在几个晚上听到附近的爆炸声后,紧张的战俘们开始吸掉手里交易用的香烟时,价格开始下降。
+
+Radford看到社会秩序以一种形式出现在这个自发的、主动的以及完全没有人指导的力量下。即使在这个不常见的环境下,人类还是证实了人类自身所具有的互惠互利的倾向。
+
+如今,数目众多的新旧产品市场以非常相似的方式如雨后春笋般涌现。
+
+
+
+
+%---------------------------------问题
+\section*{问题}
+\begin{enumerate}
+	\item 在这个例子中，一共出现了集中满足需求的方式？哪一种方式是最好的？
+	\item 谁建立和组织了这个市场？
+	\item 市场中是否有人在套利，他是如何操作的？
+	\item 牧师是否应该被Blaming?他是否应该为他的行为感到guilty?
+	\item 案例中出现了那些市场或者商业规律？
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\printbibliography[title={Bibliography}] % Print the bibliography, section title in curly brackets
+
+%----------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 参考文献
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\small
+%99为最大引用条数
+\begin{thebibliography}{99}
+	\setlength{\parskip}{0pt} %段落之间的竖直距离
+	\bibitem{ref1} Radford，R. A., The Economic Organisation of a P.O.W. Camp, Economica, New Series, Vol. 12, No. 48. (Nov., 1945), pp. 189-201.
+%	\bibitem{ref2} 玄奘. 大唐西域记学报~[J], 唐~6XX~年, 1(2): 23-55.
+	\end {thebibliography}
+
+\end{document}
