@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Article
+% LaTeX Template
+% Version 2.0 (28/2/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Frits Wenneker
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt, a4paper]{ctexart} % 10pt font size (11 and 12 also possible), A4 paper (letterpaper for US letter) and two column layout (remove for one column)
+
+\input{structure.tex} % Specifies the document structure and loads requires packages
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{营销中的产品定位} % The article title
+
+\author{
+	\authorstyle{鲁晓东\textsuperscript{1}} % Authors
+	\newline\newline % Space before institutions
+	\textsuperscript{1}\institution{中山大学岭南学院经济学系}\\ % Institution 1
+	%\textsuperscript{2}\institution{University of Texas at Austin, Texas, United States of America}\\ % Institution 2
+	%\textsuperscript{3}\institution{\texttt{LaTeXTemplates.com}} % Institution 3
+}
+
+% Example of a one line author/institution relationship
+%\author{\newauthor{John Marston} \newinstitution{Universidad Nacional Autónoma de México, Mexico City, Mexico}}
+
+\date{\today} % Add a date here if you would like one to appear underneath the title block, use \today for the current date, leave empty for no date
+%------------加水印-------------------------------------------
+\usepackage{draftwatermark}         % 所有页加水印
+%\usepackage[firstpage]{draftwatermark} % 只有第一页加水印
+%\SetWatermarkText{Xiaodong Lu}           % 设置水印内容
+\SetWatermarkText{\includegraphics{fig//lingnan.png}}         % 设置水印logo
+\SetWatermarkLightness{0.9}             % 设置水印透明度 0-1
+\SetWatermarkScale{0.5}                   % 设置水印大小 0-1    
+%--------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+\thispagestyle{firstpage} % Apply the page style for the first page (no headers and footers)
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+	
+	\lettrineabstract{效用理论在实践中的一个应用是在营销领域。公司希望开发一个吸引消费者的新产品，就要赋予这件物品能够与竞争者相区别的属性。综合考虑消费者的愿望和让产品具有新属性的成本,进而对产品进行审慎的定位,是关乎新产品能否获利的重大问题。}
+	
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+
+
+\section*{图形分析}
+
+
+
+考虑早餐麦片的例子。假设消费者只在乎两个属麦片性—口味和酥脆度(见figure\ref{positioning})。右上方是效用的增加方向。假设一种新的早餐麦片有两个竞争对手品牌$X$和品牌$Y$。营销专家的问题是让这个新品牌既能给消费者提供更大的效用,又能维持一个合算的生产成本。如果市场调查显示,典型消费者无差异曲线接近$U_1$的形状,那我们可以把新品牌定位在比如点$Z$以实现上述目标。
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.4]{fig//positioning.png} % Figure image
+	\caption{产品定位：市场研究指出,X和Y两种麦片对消费者是无差异的。一种新品牌的麦片定位于点Z则表现出好的市场前景。} % Figure caption
+	\label{positioning} % Label for referencing with \ref{bear}
+\end{figure}
+
+\section*{酒店}
+连锁酒店在经营中也用到了同样的方法。比如万豪酒店( Marriott Corporation)会聚集典型消费者小组\cite{ref1},然后让他们给各种酒店属性打分,比如入住的便利程度、游泳池和客房服务。这些信息可以帮助万豪为这些属性构建(多维)无差异曲线。然后它把主要竞争对手放在这些图上,再研究定位自己产品的不同方式。
+
+\section*{包装方式的选择}
+一些复杂产品,如汽车和个人电脑,其制造商也采用类似的定位战略,提供多种包装方式的选择。这些制造商不只要给基本产品定位以区别于竞争对手,而且要决定什么时候在设计中加入可选封装包以及如何定价。比如1980年,日本汽车制造商往往在中档车设计中加入空调、电动车窗、遮阳篷顶,与美国的竞争对手相比多了种奢华感。这种方法非常成功,此类汽车的很多制造商都效仿它们。类似地,在个人电脑市场上,戴尔、康柏这些制造商发现它们可以通过精心裁定的外围设备封装包(更大的硬盘、更多的内存、强大的处理器)来争取到更大的市场份额。
+
+%---------------------------------问题
+\section*{问题}
+\begin{enumerate}
+	\item $MRS$的概念是怎样和图1中的定位分析联系起来的?公司怎样利用$MRS$这一权衡比率所提供的信息?
+	\item 汽车提供包装方式的选择,不如每个消费者都按自己的需要去定做?你怎样看待选择包装方式这一模式的流行呢?
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\printbibliography[title={Bibliography}] % Print the bibliography, section title in curly brackets
+
+%----------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 参考文献
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\small
+%99为最大引用条数
+\begin{thebibliography}{99}
+	\setlength{\parskip}{0pt} %段落之间的竖直距离
+	\bibitem{ref1}  Alex Hiam:《企业总裁:高层经理决策方法)( Englewood Cliffs,N: Prentice Hal,199,20-272页
+	\bibitem{ref2} Nicholson, W. and Snyder, C. (2010). Intermediate Microeconomics and Its Application (11 ed.)： Cengage Learning. Chap.2
+	\end {thebibliography}
+
+\end{document}

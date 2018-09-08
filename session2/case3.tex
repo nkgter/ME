@@ -1,0 +1,126 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Article
+% LaTeX Template
+% Version 2.0 (28/2/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Frits Wenneker
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt, a4paper]{ctexart} % 10pt font size (11 and 12 also possible), A4 paper (letterpaper for US letter) and two column layout (remove for one column)
+
+\input{structure.tex} % Specifies the document structure and loads requires packages
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{富叔叔的诺言值多少钱?} % The article title
+
+\author{
+	\authorstyle{鲁晓东\textsuperscript{1}} % Authors
+	\newline\newline % Space before institutions
+	\textsuperscript{1}\institution{中山大学岭南学院经济学系}\\ % Institution 1
+	%\textsuperscript{2}\institution{University of Texas at Austin, Texas, United States of America}\\ % Institution 2
+	%\textsuperscript{3}\institution{\texttt{LaTeXTemplates.com}} % Institution 3
+}
+
+% Example of a one line author/institution relationship
+%\author{\newauthor{John Marston} \newinstitution{Universidad Nacional Autónoma de México, Mexico City, Mexico}}
+
+\date{\today} % Add a date here if you would like one to appear underneath the title block, use \today for the current date, leave empty for no date
+%------------加水印-------------------------------------------
+\usepackage{draftwatermark}         % 所有页加水印
+%\usepackage[firstpage]{draftwatermark} % 只有第一页加水印
+%\SetWatermarkText{Xiaodong Lu}           % 设置水印内容
+\SetWatermarkText{\includegraphics{fig//lingnan.png}}         % 设置水印logo
+\SetWatermarkLightness{0.9}             % 设置水印透明度 0-1
+\SetWatermarkScale{0.5}                   % 设置水印大小 0-1    
+%--------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+\thispagestyle{firstpage} % Apply the page style for the first page (no headers and footers)
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+	
+	\lettrineabstract{发生在纽约的哈默诉西德维案( Hamer v Sidway)是19世纪最离奇的案例之一。侄子威利控诉叔叔没有兑现诺言:如果侄子在21岁之前不抽烟、不喝酒、不赌博，叔叔就付给他500元。这个案子中无人否认叔叔在威利15岁的时候的确做出过这个承诺。相关的法律议题是叔叔的承诺是否构成明确的“合约”,可在法庭强制执行。考察这个怪异的案件对如何用经济学原理来澄清法律议题具有指导意义。}
+	
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+
+
+\section*{画出叔叔附加条件的承诺}
+
+图\ref{uncle}画出了威利的两种选择:$X$轴上是犯错(就是抽烟、喝酒、赌博),$Y$轴上是在其他东西上的花销。听任威利自由选择,他会选择$A$点一既会犯错也会有其他消费。这样他得到效用$U_2$。他叔叔让他选择B点给他价值500美元的其他东西,但条件是“犯错”=0。显然这个附加条件的承诺带来比$A$点更高的效用($U_3$),所以威利应该接受条件,并在青少年期间不犯错。
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.4]{fig//uncle.png} % Figure image
+	\caption{威利的效用和他叔叔的承诺\\出于他自己的意愿,威利将选择A点并得到效用$U_2$。他叔叔的诺言将他的效用水平提升至$U_3$。
+		但是,当他叔叔食言时,威利得到效用$U_1$($C$点)。} % Figure caption
+	\label{uncle} % Label for referencing with \ref{bear}
+\end{figure}
+
+\section*{当叔叔食言时}
+当威利来为他的禁戒索要5000美元报酬时,他叔叔说他会把钱放在银行账户里,当威利懂得理智地花钱时,就可以拿到这笔钱了。但叔叔死了,遗嘱里没有提到这笔支付。所以威利一分钱也没拿到。5000元打了水漂的后果在图\ref{uncle}中标为$C$点,这是威利将自己全部的钱只花在正当事项上的效用。
+
+\section*{威利上法庭}
+威利不情愿就这么算了,所以带着叔叔的财产上了法庭,声称他和叔叔定过一个合约,并且他应该得到支付。这个案子中的主要法律问题是威利和叔叔所谓的合约中的“对价”。在合约法中,A方承诺为B方做某事,只有当实际协议已达成才具有强制性。这种协议达成的一个标志是B向A支付了某种形式的对价以使协议生效。尽管这个案例中威利对叔叔并没有显而易见的支付,但法庭最终判定威利的6年禁戒生活在此扮演着这种支付的角色。显然叔叔为了看到一个不做坏事的威利而剥夺了他的快乐,这在本案中已充分构成对价。经过一番争辩,威利最后还是拿到了钱。
+
+
+
+
+%---------------------------------问题
+\section*{问题}
+\begin{enumerate}
+	\item 假设叔叔的继承人提出补偿威利，使得威利得到像青少年可以百无禁忌的生活一样的效用，在图1中画出他们需要补偿多少钱？
+	\item 如果当初叔叔答应支付问题1中那么多钱来改造威利，这是否能让威利有足够的激励去坚持原先的协议？	
+	
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\printbibliography[title={Bibliography}] % Print the bibliography, section title in curly brackets
+
+%----------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 参考文献
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\small
+%99为最大引用条数
+\begin{thebibliography}{99}
+	\setlength{\parskip}{0pt} %段落之间的竖直距离
+	%\bibitem{ref1}  Alex Hiam:《企业总裁:高层经理决策方法)( Englewood Cliffs,N: Prentice Hal,199,20-272页
+	\bibitem{ref2} Nicholson, W. and Snyder, C. (2010). Intermediate Microeconomics and Its Application (11 ed.)： Cengage Learning. Chap.2
+	\end {thebibliography}
+
+\end{document}

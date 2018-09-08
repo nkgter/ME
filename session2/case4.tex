@@ -1,0 +1,122 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Article
+% LaTeX Template
+% Version 2.0 (28/2/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Frits Wenneker
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt, a4paper]{ctexart} % 10pt font size (11 and 12 also possible), A4 paper (letterpaper for US letter) and two column layout (remove for one column)
+
+\input{structure.tex} % Specifies the document structure and loads requires packages
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{In-class Lab\\An Engagement Decision} % The article title
+
+\author{
+	\authorstyle{鲁晓东\textsuperscript{1}} % Authors
+	\newline\newline % Space before institutions
+	\textsuperscript{1}\institution{中山大学岭南学院经济学系}\\ % Institution 1
+	%\textsuperscript{2}\institution{University of Texas at Austin, Texas, United States of America}\\ % Institution 2
+	%\textsuperscript{3}\institution{\texttt{LaTeXTemplates.com}} % Institution 3
+}
+
+% Example of a one line author/institution relationship
+%\author{\newauthor{John Marston} \newinstitution{Universidad Nacional Autónoma de México, Mexico City, Mexico}}
+
+\date{\today} % Add a date here if you would like one to appear underneath the title block, use \today for the current date, leave empty for no date
+%------------加水印-------------------------------------------
+\usepackage{draftwatermark}         % 所有页加水印
+%\usepackage[firstpage]{draftwatermark} % 只有第一页加水印
+%\SetWatermarkText{Xiaodong Lu}           % 设置水印内容
+\SetWatermarkText{\includegraphics{fig//lingnan.png}}         % 设置水印logo
+\SetWatermarkLightness{0.9}             % 设置水印透明度 0-1
+\SetWatermarkScale{0.5}                   % 设置水印大小 0-1    
+%--------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+\thispagestyle{firstpage} % Apply the page style for the first page (no headers and footers)
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+	
+%	\lettrineabstract{}
+	
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+
+
+%\section*{}
+
+Lucy, the CEO of Datalytics, a medium-sized data analytics firm, is considering expansion opportunities. In the past, the company has partnered with different consulting groups on big projects. Lucy and her team have decided that if outside consultants are needed for this project, they would come from McKinsey. 
+Datalytics can enter into an agreement with McKinsey that would provide different levels of engagement. Based on evidence from prior engagements, the estimated benefits (gross of any payment made to McKinsey) are shown in the following Table: 
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.4]{fig//mckinsey.png} % Figure image
+	\caption{} % Figure caption
+	\label{mckinsey} % Label for referencing with \ref{bear}
+\end{figure}
+
+For this type of project, a McKinsey team would cost Datalytics \$1 million per month.
+
+
+
+
+%---------------------------------问题
+\section*{问题}
+\begin{enumerate}
+	\item Should Lucy’s firm enter into an agreement with McKinsey? 
+	\item If so, what level of engagement should the company choose? 
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\printbibliography[title={Bibliography}] % Print the bibliography, section title in curly brackets
+
+%----------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 参考文献
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\small
+%99为最大引用条数
+\begin{thebibliography}{99}
+	\setlength{\parskip}{0pt} %段落之间的竖直距离
+	%\bibitem{ref1}  Alex Hiam:《企业总裁:高层经理决策方法)( Englewood Cliffs,N: Prentice Hal,199,20-272页
+	\bibitem{ref2} MIT Sloan School of Management, 2015
+	\end {thebibliography}
+
+\end{document}

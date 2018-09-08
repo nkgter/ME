@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Article
+% LaTeX Template
+% Version 2.0 (28/2/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Frits Wenneker
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt, a4paper]{ctexart} % 10pt font size (11 and 12 also possible), A4 paper (letterpaper for US letter) and two column layout (remove for one column)
+
+\input{structure.tex} % Specifies the document structure and loads requires packages
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{XYZ公司的产品研发决策} % The article title
+
+\author{
+	\authorstyle{鲁晓东\textsuperscript{1}} % Authors
+	\newline\newline % Space before institutions
+	\textsuperscript{1}\institution{中山大学岭南学院经济学系}\\ % Institution 1
+	%\textsuperscript{2}\institution{University of Texas at Austin, Texas, United States of America}\\ % Institution 2
+	%\textsuperscript{3}\institution{\texttt{LaTeXTemplates.com}} % Institution 3
+}
+
+% Example of a one line author/institution relationship
+%\author{\newauthor{John Marston} \newinstitution{Universidad Nacional Autónoma de México, Mexico City, Mexico}}
+
+\date{\today} % Add a date here if you would like one to appear underneath the title block, use \today for the current date, leave empty for no date
+%------------加水印-------------------------------------------
+\usepackage{draftwatermark}         % 所有页加水印
+%\usepackage[firstpage]{draftwatermark} % 只有第一页加水印
+%\SetWatermarkText{Xiaodong Lu}           % 设置水印内容
+\SetWatermarkText{\includegraphics{fig//lingnan.png}}         % 设置水印logo
+\SetWatermarkLightness{0.9}             % 设置水印透明度 0-1
+\SetWatermarkScale{0.5}                   % 设置水印大小 0-1    
+%--------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+\thispagestyle{firstpage} % Apply the page style for the first page (no headers and footers)
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+	
+	\lettrineabstract{在现实的商业世界里，你永远也不会拥有你想要的那么多信息,特别是当你在面对一项重大决策的时候。这就意味着无法简单地计算一个决策的成本和效益,因为成本和效益都是不确定的。因此,我们只能使用随机变量( random variables)来说明我们所不知道的事物。当我们不能确定一个变量的取值的时候,首先要确定该变量可取不同数值的状况,列出该变量有可能取的数值,并给每个数值赋予一个概率。通常我们感兴趣的是期望值或平均结果,用加权平均数计算,其中权数就是概率。}\\[3ex]
+	
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+
+
+%\section*{图形分析}
+
+
+
+XYZ公司通过设计与开发软件来赚钱。他们开始先提出一些想法,根据市场需求对最好的方案提出建议,对少数方案进行深入研究,然后把产品创造出来并推向市场,最后希望他们
+的产品获得成功。他们的设计过程如图1所示。
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=1]{fig//xyz1} % Figure image
+	\caption{XYZ公司的设计程序} % Figure caption
+	\label{xyz1} % Label for referencing with \ref{bear}
+\end{figure}
+
+在“建议”阶段,营销团队为五种备选产品提供了收益预测。在“发现”阶段,技术部门对五个方案中最好的两个的成本和复杂性进行估计。
+该公司只能一次开发一个产品,所以找出最赢利的产品至关重要。2011年,根据图2中的数据,该公司决定开发产品A,因为看起来产品A能比产品B多赚30万美元。
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=1]{fig//xyz2} % Figure image
+	\caption{XYZ公司的利润预测} % Figure caption
+	\label{xyz2} % Label for referencing with \ref{bear}
+\end{figure}
+
+遗憾的是,这个产品在推出之前就失败了,这使公司陷入财务危机,董事会要求对决策过程进行正式评估。评估结果发现这是一种传统的权衡取舍:技术上更复杂的项目具有更高的
+潜在收益,但也更有可能在产品推出之前就因其内在的复杂性而失败。事实上,对过去四年间数据的评估表明,更复杂的产品只有50\%最终被推向市场,而更简单产品推向市场的比率
+是75\%。
+如果XYZ公司知道面对不确定性如何制定决策,这个错误就会很容易避免,这就是本章的研究课题。
+
+
+%---------------------------------问题
+\section*{问题}
+\begin{enumerate}
+	\item What kind of mistake did XYZ co. make?
+	\item How to avoid this mistake?
+	
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\printbibliography[title={Bibliography}] % Print the bibliography, section title in curly brackets
+
+%----------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 参考文献
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\small
+%99为最大引用条数
+\begin{thebibliography}{99}
+	\setlength{\parskip}{0pt} %段落之间的竖直距离
+	\bibitem{ref1} Froeb Luke, Brain McCann, Mikhael Shor and Michael Ward,《管理经济学》，北京大学出版社，2015年1月
+	%\bibitem{ref2} Nicholson, W. and Snyder, C. (2010). Intermediate Microeconomics and Its Application (11 ed.)： Cengage Learning. Chap.2
+	\end {thebibliography}
+
+\end{document}

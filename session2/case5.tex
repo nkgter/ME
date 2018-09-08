@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Article
+% LaTeX Template
+% Version 2.0 (28/2/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Frits Wenneker
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt, a4paper]{ctexart} % 10pt font size (11 and 12 also possible), A4 paper (letterpaper for US letter) and two column layout (remove for one column)
+
+\input{structure.tex} % Specifies the document structure and loads requires packages
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{风险厌恶} % The article title
+
+\author{
+	\authorstyle{鲁晓东\textsuperscript{1}} % Authors
+	\newline\newline % Space before institutions
+	\textsuperscript{1}\institution{中山大学岭南学院经济学系}\\ % Institution 1
+	%\textsuperscript{2}\institution{University of Texas at Austin, Texas, United States of America}\\ % Institution 2
+	%\textsuperscript{3}\institution{\texttt{LaTeXTemplates.com}} % Institution 3
+}
+
+% Example of a one line author/institution relationship
+%\author{\newauthor{John Marston} \newinstitution{Universidad Nacional Autónoma de México, Mexico City, Mexico}}
+
+\date{\today} % Add a date here if you would like one to appear underneath the title block, use \today for the current date, leave empty for no date
+%------------加水印-------------------------------------------
+\usepackage{draftwatermark}         % 所有页加水印
+%\usepackage[firstpage]{draftwatermark} % 只有第一页加水印
+%\SetWatermarkText{Xiaodong Lu}           % 设置水印内容
+\SetWatermarkText{\includegraphics{fig//lingnan.png}}         % 设置水印logo
+\SetWatermarkLightness{0.9}             % 设置水印透明度 0-1
+\SetWatermarkScale{0.5}                   % 设置水印大小 0-1    
+%--------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+\thispagestyle{firstpage} % Apply the page style for the first page (no headers and footers)
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+	
+	\lettrineabstract{经济学家们已经发现,当人们面对一种公平但带有风险的情况时,他们通常并不会选择参与其中。风险厌恶的一个重要原因首先被18世纪的瑞士数学家丹尼尔·伯努利( Daniel bernoulli)认识到。在对不确定性下行为的早期研究中,伯努利建立了理论,认为赌博游戏中的货币支付对于人们而言并不重要。相反,与赌博的奖赏所关联的期望效用(伯努利称之为心理价值)对于人们的决策才是重要的。如果赌博中货币奖赏的差异并未完全反映效用,人们就可能发现美元价值上公平的游戏实际上在效用价值上并不公平。特别是,伯努利(及之后多数的经济学家)假设,在有风险的情况下,与支付相关的效用要比这些支付的美元价值增长得慢。也就是说,随着赢取的美元数额的增加,赢得额外(或者边际)一美元的奖赏货币所带来的额外(或者边际)效用被认为是递减的。}
+	
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+
+
+\section*{递减的边际效用}
+
+这一假设在图\ref{risk}中被阐明,它表示的是在可能的奖赏(或者收入)从0美元上升至50000美元的过程中与之关联的效用变化。曲线的凹形反映了这些奖赏所带来的边际效用是被假定为递减的。尽管额外的收入总是在提高效用,收入由1000美元增至2000美元带来的效用增加却大大高于收入由49000美元增至50000美元带来的效用增加。正是这个收入的边际效用递减
+假设(这在某些方面类似于之前所介绍的一个MRS递减的假设)引出了风险厌恶。
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=1]{fig//risk.png} % Figure image
+	\caption{风险厌恶\\	用收入一效用曲线$U_3$来刻画一个人,他获自毫无风险的35000美元收入的效用要高于以50\%的可能性赢得或是失去5000美元的效用$U_2$。他(或她)将愿意支付500美元,以避免不得不进行这样的打赌。赌注为15000美元的赌博所提供的效用$U_1$甚至比5000美元赌博的效用还要少} % Figure caption
+	\label{risk} % Label for referencing with \ref{bear}
+\end{figure}
+
+\section*{风险厌恶的图解}
+图\ref{risk}表示风险厌恶。该图假设此人面临三项选择。他/她可以:
+\begin{enumerate}
+  \item 不冒任何风险地获得当前的收入水平(35000美元);
+  \item 接受一次公平的赌博,各以50\%的概率赢得或失去5000美元;
+  \item 接受一次公平的赌博,各以50\%的概率赢得或失去15000美元。为了考察此人在三个选择间的好恶,我们必须计算得自每一项选择的期望效用。
+\end{enumerate}
+
+
+
+%---------------------------------问题
+\section*{问题}
+\begin{enumerate}
+	\item 作为一个理性人，你该如何选择？
+	\item 在何种条件下,一个人将是风险中性的(也就是说,他从接受一个公平赌博和拒绝赌博中获得的效用是一样的）？
+	\item 哪种偏好可以产生对冒险情况的偏爱？	
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\printbibliography[title={Bibliography}] % Print the bibliography, section title in curly brackets
+
+%----------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 参考文献
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\small
+%99为最大引用条数
+\begin{thebibliography}{99}
+	\setlength{\parskip}{0pt} %段落之间的竖直距离
+	\bibitem{ref1}   Ben Merzrich, Bringing Down the House( New York: Free Press,2002)
+	\bibitem{ref2} Nicholson, W. and Snyder, C. (2010). Intermediate Microeconomics and Its Application (11 ed.)： Cengage Learning. Chap.5
+	\end {thebibliography}
+
+\end{document}
